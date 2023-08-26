@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply font-medium text-ctp-mauve transition ease-out hover:underline hover:opacity-60 dark:text-ctp-pink;
+  }
+
+  body {
+    @apply flex flex-col text-xl md:self-center;
+    @apply ctp-latte bg-ctp-base text-ctp-text dark:ctp-mocha selection:bg-ctp-mauve selection:text-ctp-crust dark:selection:bg-ctp-pink;
+    @apply max-w-[45em] px-[1em] py-[2em] md:px-[2.5em];
+  }
+}
